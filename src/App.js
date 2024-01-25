@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import MyForm from "./components/MyForm";
+import MyFormWithCheckbox from "./components/MyFormWithCheckbox";
+import MyFormWithErrorMsg from "./components/MyFormWithErrorMsg";
+import MyFormWithNumberInput from "./components/MyFormWithNumberInput";
+import MyFormWithRequiredField from "./components/MyFormWithRequiredField";
+import MyFormWithSelect from "./components/MyFormWithSelect";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="base">
+    <div className="app"><MyForm/></div>
+    <div className="app"><MyFormWithCheckbox/></div>
+    <div className="app"><MyFormWithErrorMsg/></div>
+    <div className="app"><MyFormWithRequiredField/></div>
+    <div className="app"><MyFormWithSelect/></div>
+    <div className="app"><MyFormWithNumberInput/></div>
     </div>
   );
 }
